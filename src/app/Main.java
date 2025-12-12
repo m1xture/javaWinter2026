@@ -7,11 +7,19 @@ public class Main {
         System.out.println("Converter app");
 
         double kgs = 5;
+        double pnds = 12;
+
         double pounds = convertKgsToPounds(kgs);
-        System.out.printf("Result is %.2f pounds", pounds);
+        double kilos = convertPoundsToKgs(pnds);
+
+        System.out.printf("Result is %.2f pounds and %.2f kgs.", pounds, kilos);
     }
 
     private static double convertKgsToPounds(double kgs) {
         return kgs * CONV_K;
+    }
+
+    private static double convertPoundsToKgs(double pnds) {
+        return pnds / CONV_K;
     }
 }
