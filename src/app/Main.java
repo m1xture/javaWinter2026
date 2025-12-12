@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Converter app");
-
+        System.out.println("App for measures converting.");
         double kgs = 5;
         double pounds = convertKgsToPounds(kgs);
         System.out.printf("Result is %.2f pounds", pounds);
