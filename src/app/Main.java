@@ -1,25 +1,30 @@
 package app;
 
-public class Main {
-    private static final double CONV_K = 2.20462;
+import app.DistanceConverter;
+import app.MassConverter;
 
+
+public class Main {
     public static void main(String[] args) {
         System.out.println("App for measures converting.");
         System.out.println("Version 1.0");
+        // Mass
         double kgs = 5;
         double pnds = 12;
 
-        double pounds = convertKgsToPounds(kgs);
-        double kilos = convertPoundsToKgs(pnds);
+        double pounds = MassConverter.convertKgsToPounds(kgs);
+        double kilos = MassConverter.convertPoundsToKgs(pnds);
 
         System.out.printf("Result is %.2f pounds and %.2f kgs.", pounds, kilos);
-    }
 
-    private static double convertKgsToPounds(double kgs) {
-        return kgs * CONV_K;
-    }
+        //? Distance
 
-    private static double convertPoundsToKgs(double pnds) {
-        return pnds / CONV_K;
+        double kms = 10;
+        double miles = 500;
+
+        double milesFromKms = DistanceConverter.convertKmsToMiles(kms);
+        double kmsFromMiles = DistanceConverter.convertMilesToKms(miles);
+
+        System.out.printf("\nResult is %.2f miles and %.2f kilometers.", milesFromKms, kmsFromMiles);
     }
 }
