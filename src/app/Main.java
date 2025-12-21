@@ -33,6 +33,7 @@ public class Main {
         double fDegrees = 50;
 
         double fahrenheitFromCelsius = TempConverter.convertCelsiusToFahrenheit(cDegrees);
-        System.out.printf("\nResult is %.2f Fahrenheit ", fahrenheitFromCelsius);
+        double celsiusFromFahrenheit = TempConverter.convertFahrenheitToCelsius(fDegrees);
+        System.out.printf("\nResult is %.2f Fahrenheit and %.2f Celsius ", fahrenheitFromCelsius, celsiusFromFahrenheit);
     }
 }

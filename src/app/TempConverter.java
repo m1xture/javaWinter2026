@@ -8,7 +8,7 @@ public class TempConverter {
         return cDegrees * CONV_K + CONV_T;
     }
 
-//    public static double convertFahrenheitToCelsius(double fDegrees) {
-//        return dDegrees / CONV_K - CONV_T;
-//    }
+    public static double convertFahrenheitToCelsius(double dDegrees) {
+        return (dDegrees - CONV_T) / CONV_K;
+    }
 }
