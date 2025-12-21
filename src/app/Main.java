@@ -26,5 +26,13 @@ public class Main {
         double kmsFromMiles = DistanceConverter.convertMilesToKms(miles);
 
         System.out.printf("\nResult is %.2f miles and %.2f kilometers.", milesFromKms, kmsFromMiles);
+
+        //? Temperature
+
+        double cDegrees = 20;
+        double fDegrees = 50;
+
+        double fahrenheitFromCelsius = TempConverter.convertCelsiusToFahrenheit(cDegrees);
+        System.out.printf("\nResult is %.2f Fahrenheit ", fahrenheitFromCelsius);
     }
 }
