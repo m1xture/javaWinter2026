@@ -1,7 +1,7 @@
-package app;
+package com.app;
 
-import app.DistanceConverter;
-import app.MassConverter;
+import com.app.DistanceConverter;
+import com.app.MassConverter;
 
 import java.util.Arrays;
 

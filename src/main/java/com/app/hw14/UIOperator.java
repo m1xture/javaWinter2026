@@ -1,4 +1,4 @@
-package app.hw14;
+package com.app.hw14;
 
 public class UIOperator {
     public void getOutput(String output) {

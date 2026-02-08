@@ -1,4 +1,4 @@
-package app.hw14;
+package com.app.hw14;
 
 public class Main {
     public static void main(String[] args) {

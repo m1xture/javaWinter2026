@@ -1,4 +1,4 @@
-package app;
+package com.app;
 
 public class MassConverter {
     private static final double CONV_K = 2.20462;
