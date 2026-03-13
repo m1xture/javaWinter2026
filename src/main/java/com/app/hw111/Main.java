@@ -1,4 +1,4 @@
-package app.hw111;
+package com.app.hw111;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
